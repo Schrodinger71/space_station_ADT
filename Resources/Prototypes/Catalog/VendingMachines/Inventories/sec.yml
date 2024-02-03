@@ -10,7 +10,12 @@
     Flash: 5
     FlashlightSeclite: 5
     ClothingEyesGlassesSunglasses: 2
+<<<<<<< HEAD
     ClothingEyesHudSecurity: 6
+=======
+    ClothingEyesHudSecurity: 2
+    ClothingEyesEyepatchHudSecurity: 1
+>>>>>>> upstream/master
     ClothingBeltSecurityWebbing: 5
     Zipties: 12
     RiotShield: 2

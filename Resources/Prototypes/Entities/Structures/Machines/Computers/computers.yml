@@ -548,10 +548,15 @@
     access: [[ "Command" ]]
   - type: CommunicationsConsole
     title: comms-console-announcement-title-station
+<<<<<<< HEAD
     sound: # Corvax-Announcements
       path: /Audio/Corvax/Announcements/announce.ogg
       params:
         volume: -5
+=======
+  - type: DeviceNetwork
+    transmitFrequencyId: ShuttleTimer
+>>>>>>> upstream/master
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface

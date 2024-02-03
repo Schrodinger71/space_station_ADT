@@ -50,7 +50,11 @@
     <GuideEntityEmbed Entity="MobDragon" Caption=""/>
   </Box>
 
+<<<<<<< HEAD
   Космический дракон – это огромное существо, создающее разломы в космосе и съедающее весь экипаж.
+=======
+  A Space Dragon is a giant dragon that creates space carp rifts and eats the crew.
+>>>>>>> upstream/master
 
   ## Способности
 

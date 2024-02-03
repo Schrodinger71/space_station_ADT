@@ -7,9 +7,13 @@
     specialDigestible:
       tags:
       - ClothMade
+<<<<<<< HEAD
       - Fruit
     #  - Meat
       - Pill
+=======
+      - Paper
+>>>>>>> upstream/master
   - type: SolutionContainerManager
     solutions:
       stomach:

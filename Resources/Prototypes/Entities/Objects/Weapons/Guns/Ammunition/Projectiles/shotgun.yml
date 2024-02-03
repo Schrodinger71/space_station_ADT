@@ -10,7 +10,11 @@
   - type: Projectile
     damage:
       types:
+<<<<<<< HEAD
         Piercing: 40  
+=======
+        Piercing: 28
+>>>>>>> upstream/master
 
 - type: entity
   id: PelletShotgunBeanbag
@@ -132,10 +136,7 @@
           !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         mask:
-        - BulletImpassable
-  - type: Tag
-    tags:
-    - PelletShotgunFlare
+          - BulletImpassable
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: buckshot-flare

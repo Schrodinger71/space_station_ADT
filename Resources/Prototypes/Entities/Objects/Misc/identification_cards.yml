@@ -661,10 +661,14 @@
     - JobIconServiceWorker
     - JobIconSecurityCadet
     - JobIconZookeeper
+<<<<<<< HEAD
     - JobIconSeniorPhysician
     - JobIconSeniorOfficer
     - JobIconSeniorEngineer
     - JobIconSeniorResearcher
+=======
+    - JobIconVisitor
+>>>>>>> upstream/master
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key
     inHandsOnly: true

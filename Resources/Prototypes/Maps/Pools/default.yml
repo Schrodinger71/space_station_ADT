@@ -1,14 +1,16 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Aspid
   - Atlas
   - Bagel
   - Box
   - Cluster
   - Core
   - Fland
+<<<<<<< HEAD
   # - Kettle
+=======
+>>>>>>> upstream/master
   - Marathon
   - Meta
   - Gemini

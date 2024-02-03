@@ -1,6 +1,7 @@
 - type: reagentDispenserInventory
   id: SodaDispenserInventory
   inventory:
+<<<<<<< HEAD
   - Ice
   - Coffee
   - Cream
@@ -23,10 +24,31 @@
   ###Hacked
   #- Fourteen Loko
   #- GrapeSoda
+=======
+  - DrinkCoffeeJug
+  - DrinkColaBottleFull
+  - DrinkCreamCartonXL
+  - DrinkDrGibbJug
+  - DrinkEnergyDrinkJug
+  - DrinkGreenTeaJug
+  - DrinkIceJug
+  - DrinkJuiceLimeCartonXL
+  - DrinkJuiceOrangeCartonXL
+  - DrinkLemonLimeJug
+  - DrinkRootBeerJug
+  - DrinkSodaWaterBottleFull
+  - DrinkSpaceMountainWindBottleFull
+  - DrinkSpaceUpBottleFull
+  - DrinkSugarJug
+  - DrinkTeaJug
+  - DrinkTonicWaterBottleFull
+  - DrinkWaterMelonJuiceJug
+>>>>>>> upstream/master
 
 - type: reagentDispenserInventory
   id: BoozeDispenserInventory
   inventory:
+<<<<<<< HEAD
   - Beer
   - CoffeeLiqueur
   - Whiskey
@@ -59,3 +81,17 @@
     - AtomicBomb
     - Ethanol
     - Iron
+=======
+  - DrinkAleBottleFullGrowler
+  - DrinkBeerGrowler
+  - DrinkCoffeeLiqueurBottleFull
+  - DrinkCognacBottleFull
+  - DrinkGinBottleFull
+  - DrinkMeadJug
+  - DrinkRumBottleFull
+  - DrinkTequilaBottleFull
+  - DrinkVermouthBottleFull
+  - DrinkVodkaBottleFull
+  - DrinkWhiskeyBottleFull
+  - DrinkWineBottleFull
+>>>>>>> upstream/master

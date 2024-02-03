@@ -39,14 +39,17 @@ public sealed partial class FultonComponent : Component
     {
         Components = new[]
         {
-            "EntityStorage",
             "Item",
+<<<<<<< HEAD
             "ReagentTank",
             "Machine",
             "Computer",
             "VendingMachine",
             "AtmosDevice",
             "RadiationReceiver",
+=======
+            "Anchorable"
+>>>>>>> upstream/master
         }
     };
 

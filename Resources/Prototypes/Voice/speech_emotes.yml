@@ -65,6 +65,7 @@
     - giggles!
     - giggling
     - giggled
+<<<<<<< HEAD
     # Corvax-Localization-Start
     - смеется
     - смеется.
@@ -82,6 +83,17 @@
     - хихикнула
     - ржёт
     # Corvax-Localization-End
+=======
+    - chortle
+    - chortle.
+    - chortle!
+    - chortles
+    - chortles.
+    - chortles!
+    - chortling
+    - chortling.
+    - chortling!
+>>>>>>> upstream/master
 
 - type: emote
   id: Honk
@@ -148,6 +160,7 @@
     - cries
     - cries.
     - cries!
+<<<<<<< HEAD
     # Corvax-Localization-Start
     - плачет
     - плачет.
@@ -156,6 +169,16 @@
     - рыдает.
     - рыдает!
     # Corvax-Localization-End
+=======
+    - sob
+    - sob.
+    - sobs
+    - sobs.
+    - sobs!
+    - sobbing
+    - sobbing.
+    - sobbing!
+>>>>>>> upstream/master
 
 - type: emote
   id: Squish
@@ -332,3 +355,21 @@
   chatMessages: ["emote-deathgasp"]
   chatTriggers:
   - deathgasp
+
+- type: emote
+  id: Buzz
+  category: Vocal
+  chatMessages: [buzz!]
+  chatTriggers:
+    - buzzing
+    - buzzing!
+    - buzzing.
+    - buzz
+    - buzz.
+    - buzz!
+    - buzzed
+    - buzzed.
+    - buzzed!
+    - buzzes
+    - buzzes.
+    - buzzes!

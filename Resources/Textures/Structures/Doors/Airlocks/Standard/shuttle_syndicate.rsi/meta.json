@@ -6,6 +6,7 @@
     "x": 32,
     "y": 32
   },
+<<<<<<< HEAD
     "states": [
         {
             "name": "bolted_unlit"
@@ -142,5 +143,33 @@
                 ]
             ]
         }
+=======
+  "states": [
+    {
+      "name": "assembly"
+    },
+    {
+      "name": "bolted_unlit"
+    },
+    {
+      "name": "closed"
+    },
+    {
+      "name": "closed_unlit"
+    },
+    {
+      "name": "closing",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+      ]
+>>>>>>> upstream/master
     ]
 }

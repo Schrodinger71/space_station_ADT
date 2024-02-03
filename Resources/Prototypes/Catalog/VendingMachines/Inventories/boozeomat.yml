@@ -13,9 +13,13 @@
     DrinkFlaskBar: 5
     ADTDrinkTeapot: 2 # Всё ещё думаю над тем, уменьшать или оставить такое кол-во.
     DrinkShaker: 5
+<<<<<<< HEAD
     ADTDrinkGlassJug: 3
     ADTCarnationPack: 10 #Новый год
     ADTCinnamonPack: 5
+=======
+    CustomDrinkJug: 2 #to allow for custom drinks in the soda/booze dispensers
+>>>>>>> upstream/master
     DrinkAbsintheBottleFull: 2
     DrinkAleBottleFull: 5
     DrinkBeerBottleFull: 5
@@ -50,6 +54,11 @@
     DrinkWineBottleFull: 5
     ADTDrinkCherryExquisiteWineBottleFull: 1
     DrinkChampagneBottleFull: 2 #because the premium drink
+<<<<<<< HEAD
     ADTDrinkVodkaAntivirusBottleFull: 2
+=======
+    DrinkBeerCan: 5
+    DrinkWineCan: 5
+>>>>>>> upstream/master
   emaggedInventory:
     DrinkPoisonWinebottleFull: 2

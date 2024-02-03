@@ -113,4 +113,10 @@ chat-speech-verb-ghost-2 = breathes
 chat-speech-verb-ghost-3 = hums
 chat-speech-verb-ghost-4 = mutters
 
+<<<<<<< HEAD
 chat-manager-sender-centcomm = Central Command
+=======
+chat-speech-verb-electricity-1 = crackles
+chat-speech-verb-electricity-2 = buzzes
+chat-speech-verb-electricity-3 = screeches
+>>>>>>> upstream/master

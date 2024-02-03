@@ -63,6 +63,7 @@
             - material: Steel
               amount: 2
               doAfter: 1
+<<<<<<< HEAD
         - to: adtblacksofaleft
           steps:
             - material: Steel
@@ -289,10 +290,18 @@
               amount: 2
               doAfter: 1
         - to: adtsofabrownrightcorner
+=======
+        - to: redComfBench
+>>>>>>> upstream/master
           steps:
             - material: Steel
               amount: 2
               doAfter: 1
+<<<<<<< HEAD
+=======
+            - material: Cloth
+              amount: 1
+>>>>>>> upstream/master
 
     - node: chair
       entity: Chair
@@ -426,14 +435,20 @@
             - tool: Screwing
               doAfter: 1
 
+<<<<<<< HEAD
     - node: adtblacksofaleft
       entity: ADTBlackSofaLeftSide
+=======
+    - node: redComfBench
+      entity: BenchRedComfy
+>>>>>>> upstream/master
       edges:
         - to: start
           completed:
             - !type:SpawnPrototype
               prototype: SheetSteel1
               amount: 2
+<<<<<<< HEAD
           steps:
             - tool: Screwing
               doAfter: 2
@@ -981,3 +996,13 @@
           steps:
             - tool: Screwing
               doAfter: 2
+=======
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 1
+          steps:
+            - tool: Cutting
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+>>>>>>> upstream/master

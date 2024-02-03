@@ -1,4 +1,7 @@
 using Content.Shared.CCVar;
+using Content.Shared.Mind.Components;
+using Content.Shared.Mobs.Systems;
+using Content.Shared.NPC;
 using Content.Shared.SSDIndicator;
 using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
@@ -14,6 +17,7 @@ public sealed class SSDIndicatorSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
 
     public override void Initialize()
     {
@@ -26,8 +30,7 @@ public sealed class SSDIndicatorSystem : EntitySystem
     {
         if (!component.IsSSD ||
             !_cfg.GetCVar(CCVars.ICShowSSDIndicator) ||
-            args.InContainer ||
-            args.HasStealthComponent)
+            args.InContainer)
             return;
 
         args.StatusIcons.Add(_prototype.Index<StatusIconPrototype>(component.Icon));

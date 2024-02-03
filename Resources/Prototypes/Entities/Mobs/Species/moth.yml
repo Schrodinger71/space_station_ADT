@@ -8,10 +8,13 @@
   - type: HumanoidAppearance
     species: Moth
   - type: Hunger
+<<<<<<< HEAD
     starvationDamage:
       types:
         Cold: 0.05
         Bloodloss: 0.05
+=======
+>>>>>>> upstream/master
   - type: Thirst
   - type: Icon
     sprite: Mobs/Species/Moth/parts.rsi
