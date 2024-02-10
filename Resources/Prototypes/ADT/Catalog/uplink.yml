@@ -58,7 +58,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledHristov
   cost:
-    Telecrystal: 20
+    Telecrystal: 15
   categories:
   - UplinkBundles
   conditions:
@@ -90,7 +90,7 @@
   icon: { sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi, state: icon }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledElite
   cost:
-    Telecrystal: 10
+    Telecrystal: 14
   categories:
   - UplinkArmor
   conditions:
@@ -210,7 +210,7 @@
   description: uplink-ADTHandDefibrillator-desc
   productEntity: ADTHandDefibrillator
   cost:
-    Telecrystal: 25
+    Telecrystal: 4
   categories:
   - UplinkMisc
   conditions:
@@ -413,3 +413,32 @@
       - Chef
       - ServiceWorker
 
+- type: listing
+  id: ADTUplinkNukeSyndiHoloprojectorField
+  name: uplink-syndiholoprojectorfield-name
+  description: uplink-syndiholoprojectorfield-desc
+  productEntity: ADTSyndiHoloprojectorField
+  cost:
+    Telecrystal: 12
+  categories:
+    - UplinkUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkSyndieSyndiHoloprojectorField
+  name: uplink-syndiholoprojectorfield-name
+  description: uplink-syndiholoprojectorfield-desc
+  productEntity: ADTSyndiHoloprojectorField
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink

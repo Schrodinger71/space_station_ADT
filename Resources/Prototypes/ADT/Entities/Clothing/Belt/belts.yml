@@ -60,8 +60,8 @@
     contents:
       - id: EmergencyMedipen
         amount: 2
-      - id: MagazinePistolHighCapacity
-      - id: WeaponPistolViper
+      - id: MagazineMagnum
+      - id: WeaponPistolN1984
       - id: MedicatedSuture
 
 - type: entity
@@ -93,9 +93,10 @@
     contents:
       - id: EmergencyMedipen
         amount: 2
-      - id: MagazinePistolHighCapacity
-      - id: WeaponPistolViper
+      - id: MagazineMagnum
+      - id: WeaponPistolN1984
       - id: MedicatedSuture
+      - id: ADTAdvancedHoloprojectorField
 
 - type: entity
   id: ADTClothingBeltMilitaryWebbingRPSL_Rev
@@ -288,3 +289,19 @@
     sprite: ADT/Clothing/Belt/rps_tactical_ussp.rsi
   - type: Clothing
     sprite: ADT/Clothing/Belt/rps_tactical_ussp.rsi
+
+#День Святого Валентина
+
+- type: entity
+  parent: ClothingBeltQuiver
+  id: ADTClothingBeltQuiverCupidon
+  name: cupidon quiver
+  description: cupidon quiver
+  suffix: Valentine Day
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/cupidon_quiver.rsi
+    layers:
+    - state: icon
+    - map: [ "enum.StorageContainerVisualLayers.Fill" ]
+      visible: false

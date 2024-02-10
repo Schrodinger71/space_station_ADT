@@ -10,7 +10,7 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 0.95, 0.95
+    scale: 0.98, 0.98
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
@@ -59,12 +59,20 @@
         sprite: Objects/Misc/handcuffs.rsi
         state: body-overlay-2
         visible: false
-      - map: [ "clownedon" ] 
+      - map: [ "clownedon" ]
         sprite: "Effects/creampie.rsi"
         state: "creampie_human"
         visible: false
   - type: HumanoidAppearance
     species: Felinid
+  - type: Destructible #процесс разрушения на органы
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt #при каком дамаге это происходит
+        damage: 300
+      behaviors:
+      - !type:GibBehavior { }
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -104,8 +112,8 @@
     butcheringType: Spike # TODO human.
     spawned:
       - id: FoodMeat
-        amount: 5
-        
+      - id: ClothingHeadHatCatEars
+
 - type: entity
   save: false
   name: Felinid Dummy
@@ -205,7 +213,7 @@
       priority: -10
       event: !type:HairballActionEvent
       charges: 100  #костыль
-      useDelay: 30
+      useDelay: 100 #
 
 - type: entity
   id: ActionEatMouse

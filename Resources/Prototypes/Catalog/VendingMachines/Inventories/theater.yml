@@ -1,6 +1,8 @@
 - type: vendingMachineInventory
   id: AutoDrobeInventory
   startingInventory:
+    ADTBoxValentineWhite: 5
+    ADTBoxValentineRed: 5
     ClothingHeadHatJester: 1
     ClothingUniformJumpsuitJester: 1
     ClothingHeadHatJesterAlt: 1
@@ -27,9 +29,9 @@
     ClothingHeadHatPumpkin: 2
     ClothingHeadHatShrineMaidenWig: 2
     ClothingOuterSuitShrineMaiden: 2
+    Gohei: 2
     ClothingHeadHatRedRacoon: 2
     ClothingOuterRedRacoon: 2
-    Gohei: 2
     ClothingHeadPaperSack: 2
     ClothingHeadPaperSackSmile: 2
     ClothingEyesBlindfold: 1

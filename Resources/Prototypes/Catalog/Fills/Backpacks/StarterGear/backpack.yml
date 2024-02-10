@@ -266,9 +266,9 @@
         - id: RegenerativeMesh
         - id: Handcuffs
         - id: JawsOfLife
-        - id: WeaponRifleLecter
-        - id: MagazineRifle
-        - id: MagazineRifle
+        - id: ADTWeaponRifleAR12
+        - id: ADTMagazineRifleAR12
+        - id: ADTMagazineRifleAR12
 
 - type: entity
   noSpawn: true
@@ -289,6 +289,8 @@
         - id: MagazinePistolSubMachineGun
           amount: 2
         - id: CombatKnife
+        - id: CrowbarRed
+        - id: MagazineMagnum
 
 - type: entity
   noSpawn: true
@@ -304,9 +306,9 @@
         - id: RegenerativeMesh
         # - id: BoxHandcuff
         - id: JawsOfLife
-        - id: WeaponRifleLecter
-        - id: MagazineRifle
-        - id: MagazineRifle
+        - id: ADTWeaponRifleAR12
+        - id: ADTMagazineRifleAR12
+        - id: ADTMagazineRifleAR12
 
 - type: entity
   noSpawn: true
@@ -348,9 +350,9 @@
     - id: BluespaceBeaker
     # - id: Defibrillator
     - id: CrowbarRed
-    - id: WeaponRifleLecter
-    - id: MagazineRifle
-    - id: MagazineRifle
+    - id: ADTWeaponRifleAR12
+    - id: ADTMagazineRifleAR12
+    - id: ADTMagazineRifleAR12
 
 - type: entity
   noSpawn: true
@@ -390,11 +392,13 @@
         - id: RegenerativeMesh
         - id: RCD
         - id: RCDAmmo
-        - id: WeaponRifleLecter
-        - id: MagazineRifle
-        - id: MagazineRifle
+        - id: ADTWeaponRifleAR12
+        - id: ADTMagazineRifleAR12
+        - id: ADTMagazineRifleAR12
+        - id: ADTAdvancedHoloprojectorField
         - id: C4
           amount: 2
+
 
 - type: entity
   noSpawn: true
@@ -420,6 +424,7 @@
           amount: 1
         - id: ADTtelescopicBaton
         - id: CombatKnife
+        - id: ADTAdvancedHoloprojectorField
 
 
 - type: entity
@@ -487,7 +492,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
+        - id: NesBoxSurvivalSalvager
 
 # Pirate
 

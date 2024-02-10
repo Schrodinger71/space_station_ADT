@@ -11,11 +11,16 @@
     interactSuccessSound: /Audio/ADT/Felinid/cat_purr1.ogg
     messagePerceivedByOthers: petting-success-soft-floofy-others
     interactSuccessSpawn: EffectHearts
-    interactDelay: 5
+    interactDelay: 4
   - type: MindContainer
     showExamineInfo: true
   - type: Input
     context: "human"
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      90: Critical
+      195: Dead
   - type: MobMover
   - type: InputMover
   - type: Respirator

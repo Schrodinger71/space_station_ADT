@@ -48,6 +48,7 @@
   - ResearchDirector
   - Quartermaster
   - ADTBlueShieldOfficer
+  primary: false
 
 - type: department
   id: Engineering
@@ -99,6 +100,7 @@
   - SeniorResearcher
   - Scientist
   - ResearchAssistant
+  - ADTRoboticist # ADT Roboticist job
 
 - type: department
   id: Specific
@@ -109,6 +111,7 @@
   - Reporter
   - Zookeeper
   - Psychologist
+  primary: false
 
 - type: department
   id: Law

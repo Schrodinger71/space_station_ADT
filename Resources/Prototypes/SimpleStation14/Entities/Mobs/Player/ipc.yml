@@ -4,6 +4,11 @@
   name: Urist McPositronic
   #description: [mob_ipc-desc]
   components:
+  - type: InteractionPopup
+    interactSuccessString: petting-success-ipc
+    #interactFailureString: petting-failure-cleanbot
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: SiliconEmitSoundOnDrained
     sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg"
     interval: 15
@@ -19,6 +24,11 @@
       0: Alive
       125: Critical
       180: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+      Critical: BorgCrit
+      Dead: BorgDead
+
     allowRevives: true # Для воскрешения достаточно починить урон. - ss220.
   - type: NpcFactionMember
     factions:
@@ -71,10 +81,30 @@
     boardName: "ipc-board-name"
     layoutId: IPC
   - type: SSDIndicator
-  - type: UnblockableSpeech
+#  - type: UnblockableSpeech
   - type: EmotePanel
   - type: ContentEye
     maxZoom: 1.0,1.0
+  - type: LightningTarget
+    priority: 4
+    lightningExplode: false
+  - type: Vocal
+    sounds:
+      Male: UnisexIPC
+      Female: UnisexIPC
+      Unsexed: UnisexIPC
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Dead
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/ADT/IPC/borg_deathsound.ogg
+  - type: TTS # Corvax-TTS
+  - type: Tag
+    tags:
+    - ChangelingBlacklist
+    - ShoesRequiredStepTriggerImmune
+
 
 - type: entity
   save: false

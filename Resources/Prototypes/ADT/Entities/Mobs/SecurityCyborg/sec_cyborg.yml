@@ -107,10 +107,15 @@
     damageModifierSet: ADTSecurityCybDamagModSet
   - type: TriggerOnMobstateChange
     mobState:
-    - Critical
+    - Dead
   - type: EmitSoundOnTrigger
     sound:
       collection: SoldierDeath
+  - type: Vocal
+    sounds:
+      Male: UnisexIPC
+      Female: UnisexIPC
+      Unsexed: UnisexIPC
   - type: Speech
     speechSounds: Metrocop
     soundCooldownTime: 0.5
@@ -121,6 +126,14 @@
         volume: -2
   - type: NoSlip
   - type: Insulated
+  - type: Tag
+    tags:
+    - ChangelingBlacklist
+    - ShoesRequiredStepTriggerImmune
+  # - type: PresetIdCard
+  #   job: ADTSecurityCyborg
+  # - type: AccessReader
+  #   access: [ ["Engineering"], ["Command"], ["Research"], ["Cargo"], ["Salvage"], ["Brig"], ["Medical"], ["Medical"], ["Research"], ["Security"], ["Armory"], ["Detective"], ["External"], ["Service"], ["Captain"], ["CentralCommand"] ]
 
 
 - type: entity
