@@ -13,6 +13,7 @@
   #  maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
+      - id: ADTtelescopicBaton
       - id: ClothingShoesBootsLaceup
       - id: ClothingHandsGlovesCombat
       - id: ClothingEyesGlassesSunglasses
@@ -20,7 +21,7 @@
       - id: ClothingUniformJumpsuitCentcomAgent
       - id: ADTWeaponRevolverDeckardGold
       - id: CentcomPDA
-      - id: ADTClothingNeckMantleCentComm
+      #- id: ADTClothingNeckMantleCentComm
       - id: ClothingHeadsetAltCentCom
       - id: ADTClothingOuterCoatSchroCoat
       - id: ADTClothingNeckNanoTrasenPinSchrodinger
