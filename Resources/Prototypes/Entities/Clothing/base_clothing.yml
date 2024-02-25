@@ -1,4 +1,4 @@
-- type: entity
+- type: entity #аааа
   abstract: true
   parent: BaseItem
   id: Clothing
