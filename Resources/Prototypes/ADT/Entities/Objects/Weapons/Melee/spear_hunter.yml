@@ -1,48 +1,161 @@
+- type: entity
+  name: SpearHunter
+  parent: BaseItem
+  id: ADTMeleeSpearHunter
+  description: Big, dangerous telescopic baton. Can be stored in pockets when turned off.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/spear_hunter.rsi
+    layers:
+    - state: telescope_off
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: SwitchableWeapon
+    openSound: "/Audio/ADT/open_telescopichka.ogg"
+    closeSound: "/Audio/ADT/close_telescopichka.ogg"
+    bonkSound: "/Audio/Weapons/bladeslice.ogg"
+    damageOpen:
+      types:
+        Blunt: 4.4
+        Piercing: 15
+    damageFolded:
+      types:
+        Blunt: 0
+    staminaDamageFolded: 0
+    # staminaDamageOpen: 10
+    sizeOpened: Ginormous
+    sizeClosed: Small
+  - type: StaminaDamageOnHit
+    damage: 0
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 4.4
+        Piercing: 15
+  - type: Item
+    size: Small
+    sprite: ADT/Objects/Weapons/Melee/spear_hunter.rsi
+  - type: UseDelay
+    delay: 1.0
+  - type: DisarmMalus
+    malus: 0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+     enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: telescope_on}
+          False: {state: telescope_off}
+  - type: EmbeddableProjectile
+    offset: 0.15,0.15
+  - type: ThrowingAngle
+    angle: 225
+  - type: Tag
+    tags:
+    - Spear
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PolygonShape
+          vertices:
+            - -0.40,-0.30
+            - -0.30,-0.40
+            - 0.40,0.30
+            - 0.30,0.40
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: Sharp
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        maxVol: 5
+
 # - type: entity
-#   name: TelescopicBaton
+#   name: energy sword
 #   parent: BaseItem
-#   id: ADTMeleeSpearHunter
-#   description: Big, dangerous telescopic baton. Can be stored in pockets when turned off.
+#   id: EnergySword
+#   description: A very loud & dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.
 #   components:
+#   - type: EnergySword
+#   - type: ItemToggle
+#     soundActivate:
+#       path: /Audio/Weapons/ebladeon.ogg
+#     soundDeactivate:
+#       path: /Audio/Weapons/ebladeoff.ogg
+#   - type: ItemToggleActiveSound
+#     activeSound:
+#       path: /Audio/Weapons/ebladehum.ogg
+#   - type: ItemToggleSharp
+#   - type: ItemToggleHot
+#   - type: ItemToggleDisarmMalus
+#     activatedDisarmMalus: 0.6
+#   - type: ItemToggleSize
+#     activatedSize: Huge
+#   - type: ItemToggleMeleeWeapon
+#     activatedSoundOnHit:
+#       path: /Audio/Weapons/eblade1.ogg
+#       params:
+#         variation: 0.250
+#     activatedSoundOnHitNoDamage:
+#       path: /Audio/Weapons/eblade1.ogg
+#       params:
+#         variation: 0.250
+#         volume: -10
+#     activatedSoundOnSwing:
+#       path: /Audio/Weapons/eblademiss.ogg
+#       params:
+#         variation: 0.125
+#     activatedDamage:
+#         types:
+#             Slash: 15
+#             Heat: 15
+#             Structural: 20
 #   - type: Sprite
-#     sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
+#     sprite: Objects/Weapons/Melee/e_sword.rsi
 #     layers:
-#     - state: telescope_off
-#       map: [ "enum.ToggleVisuals.Layer" ]
-#   - type: SwitchableWeapon
-#     openSound: "/Audio/ADT/open_telescopichka.ogg"
-#     closeSound: "/Audio/ADT/close_telescopichka.ogg"
-#     #bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
-#     damageOpen:
-#       types:
-#         Blunt: 2.4
-#     damageFolded:
-#       types:
-#         Blunt: 0
-#     staminaDamageFolded: 0
-#     staminaDamageOpen: 35
-#     sizeOpened: Normal
-#     sizeClosed: Small
-#   - type: StaminaDamageOnHit
-#     damage: 0
+#       - state: e_sword
+#       - state: e_sword_blade
+#         color: "#FFFFFF"
+#         visible: false
+#         shader: unshaded
+#         map: [ "blade" ]
 #   - type: MeleeWeapon
+#     wideAnimationRotation: -135
+#     attackRate: 1
 #     damage:
 #       types:
-#         Blunt: 2.4
+#         Blunt: 4.5
 #   - type: Item
 #     size: Small
-#     sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
+#     sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
 #   - type: UseDelay
 #     delay: 1.0
+#   - type: PointLight
+#     enabled: false
+#     radius: 2
+#     energy: 2
+#     color: white
+#     netsync: false
+#   - type: Appearance
+#   - type: ToggleableLightVisuals
+#     spriteLayer: blade
+#     inhandVisuals:
+#       left:
+#       - state: inhand-left-blade
+#         shader: unshaded
+#       right:
+#       - state: inhand-right-blade
+#         shader: unshaded
 #   - type: DisarmMalus
 #     malus: 0
-#   - type: Appearance
-#   - type: GenericVisualizer
-#     visuals:
-#      enum.ToggleVisuals.Toggled:
-#         enum.ToggleVisuals.Layer:
-#           True: {state: telescope_on}
-#           False: {state: telescope_off}
+#   - type: Reflect
+#     enabled: false
 
 # - type: entity
 #   name: spear
