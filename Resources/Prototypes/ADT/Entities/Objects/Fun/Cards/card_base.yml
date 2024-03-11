@@ -12,8 +12,7 @@
     layers:
     - state: back-off
       map: ["base"]
-  - type: TrayScanner
-    range: 0.000000000001
+  - type: ADTTrayScannerCard
   - type: Item
     size: Tiny
     sprite: ADT/Objects/Fun/cards.rsi
