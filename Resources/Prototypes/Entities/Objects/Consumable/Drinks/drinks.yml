@@ -390,6 +390,10 @@
           Quantity: 30
   - type: Sprite
     sprite: Objects/Consumable/Drinks/beerglass.rsi
+    state: icon
+  - type: Tag
+    tags:
+    - Beer
 
 - type: entity
   parent: DrinkGlassBase
@@ -977,6 +981,10 @@
   - type: Drink
   - type: Sprite
     sprite: Objects/Consumable/Drinks/iced_beerglass.rsi
+    state: icon
+  - type: Tag
+    tags:
+    - Beer
 
 - type: entity
   parent: DrinkGlassBase
