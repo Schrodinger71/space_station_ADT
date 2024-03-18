@@ -34,6 +34,9 @@
   - type: Construction
     graph: Bonfire
     node: bonfire
+  - type: Tag
+    tags:
+      - NoPaint
 
 - type: entity
   id: LegionnaireBonfire

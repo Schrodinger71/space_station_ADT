@@ -95,6 +95,9 @@
     - RevenantTheme
   - type: Speech
     speechVerb: Ghost
+  - type: Tag
+    tags:
+      - NoPaint
   - type: LanguageSpeaker # Frontier
     speaks:
     - GalacticCommon
