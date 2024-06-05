@@ -36,7 +36,7 @@ jobs:
 
     - name: Install Secrets
       run: |
-        git clone ${{ secrets.SECRETS_PATH }}
+        git clone https://github.com/xtray85/ADT_STATION.git
         cd ADT_STATION/
         chmod +x ./install.sh
         ./install.sh
